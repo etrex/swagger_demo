@@ -1,0 +1,15 @@
+Post:
+  name: Post
+  description: A blog post
+  type: object
+  properties:
+    title:
+      type: string
+    content:
+      type: string
+    path:
+      type: string
+    tags:
+      type: array
+      items:
+        type: string

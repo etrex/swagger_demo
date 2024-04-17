@@ -1,0 +1,13 @@
+User:
+  type: object
+  properties:
+    name:
+      type: string
+    email:
+      type: string
+    birthday:
+      type: string
+    phone:
+      type: string
+    is_vip:
+      type: boolean

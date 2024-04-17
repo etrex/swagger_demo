@@ -1,0 +1,15 @@
+openapi: 3.0.0
+
+info:
+  title: Sample API(Add is_vip on User)
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+components:
+  schemas:
+    User:
+      $ref: add_is_vip_on_user/components/schemas/user.yaml#/User
+
+paths:
+  /users:
+    $ref: add_is_vip_on_user/paths/users.yaml

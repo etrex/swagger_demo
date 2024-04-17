@@ -1,0 +1,23 @@
+openapi: 3.0.0
+
+info:
+  title: Sample API(Production)
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+servers:
+  - url: http://api.example.com/v1
+    description: Optional server description, e.g. Main (production) server
+
+components:
+  schemas:
+    User:
+      $ref: master/components/schemas/user.yaml#/User
+    Post:
+      $ref: master/components/schemas/post.yaml#/Post
+
+paths:
+  /users:
+    $ref: master/paths/users.yaml
+  /posts:
+    $ref: master/paths/posts.yaml

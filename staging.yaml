@@ -1,0 +1,23 @@
+openapi: 3.0.0
+
+info:
+  title: Sample API(Staging)
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+servers:
+  - url: http://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+
+components:
+  schemas:
+    User:
+      $ref: master/components/schemas/user.yaml#/User
+    Post:
+      $ref: develop/components/schemas/post.yaml#/Post
+
+paths:
+  /users:
+    $ref: master/paths/users.yaml
+  /posts:
+    $ref: develop/paths/posts.yaml
